@@ -5,7 +5,6 @@
 html
   max-width: 100%;
 
-
 body
   text-align: center;
   span
@@ -111,12 +110,11 @@ body
 
     header
       margin-left: 10px;
-      border-left: 5px solid #705102;
+      border-left: 3px solid #705102;
       span
         width: auto;
         text-transform: uppercase;
         display:block;
-
         border-right: 3px solid #705102;
 
       .i
@@ -127,22 +125,44 @@ body
       .iii
         width: 240px;
       .iiii
-        width: 360px;
+        width: 365px;
         border-bottom: 3px solid #705102;
       .lin1, .lin2, .lin3, .lin4
         height: 3px;
         top: 0;
-        left: 0;
+        left: 10px;
         position: absolute;
-        background-color: #705102
+        background-color: #705102;
       .lin1
-        width: 100px;
+        width: 17px;
         top: 20px;
-        left: 300px;
+        left: 304px;
+      .lin1::after
+        content: "";
+        background-color:  #705102;
+        position: absolute;
+        transform: rotate(90deg);
+        width: 20px;
+        height: 3px;
+        top: 8px;
+        left: -10px;
       .lin2
-        width: 100px;
+        width: 52px;
+        top: 50px;
+        left: 254px;
+      .lin2::after
+        content: "";
+        background-color:  #705102;
+        position: absolute;
+        transform: rotate(90deg);
+        width: 40px;
+        height: 3px;
+        top: 18px;
+        left: -20px;
       .lin3
-        width: 100px;
+        width: 127px;
+        top: 87px;
+        left: 254px;
       .lin4
         width: 100px;
 
