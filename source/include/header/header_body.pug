@@ -1,0 +1,28 @@
+- var city = ["Киев","Львов","Днепр"];
+- var choise = ["По всему каталогу","В разделе ПК","В разделе Ашот"]
+div.container(class="con")
+  img.header-body-right(src="img/logo-icon.jpg")
+  div.header-body-left
+    //img.header-body-left(src="img/arrow_down.png")
+    div.header-body-rightt
+      select
+        option(selected value="Choise city") Выберете город
+        for gorod in city
+          option(value= gorod)= gorod
+      div.header-text-up
+        a(src="#") Заказать звонок
+        044 800 555 00 55
+      div.header-text-up
+        a(src="#") Online-chat
+        br
+        044 555 00 55
+      span.header-body-basket Корзина
+      img.header-body-basket(src="img/basket.png")
+    div.header-body-leftt
+      input.search(type="text" )
+      span.search
+       select Где искать
+        for names in choise
+          option(value= names)= names
+      a(href="#")
+        img.header-body-magnifier(src="img/magnifier.png")

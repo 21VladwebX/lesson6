@@ -1,0 +1,22 @@
+- var headr = ["О магазине", "Акции", "Доставка и оплата", "Кредит", "Помощь", "Контакты"] ;
+header
+  .container
+    .navbar-collapse
+      .row
+        ul.nav.col-lg-8
+          for word in headr
+            li.nav-item
+              a.nav-link(href="#")= word
+        div.col-lg-3.row
+          img.header-right(src="img/fecac0c0.png")
+          button(class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false").
+            Мой магазин
+          div.dropdown-menu(aria-labelledby="dropdownMenuButton")
+            a.dropdown-item(href="#") Твой магазин
+            a.dropdown-item(href="#") Чей-то магазин
+            a.dropdown-item(href="#") Магазик ашота:)
+          .col-lg-3
+            img(src="img/if_key_298808.png")
+            a(href="#") Вход
+      //  img.header-right(src="../../img/fecac0c0.png")
+      //  img.header-right(src="../../img/if_key_298808.png")

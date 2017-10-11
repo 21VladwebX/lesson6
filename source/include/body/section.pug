@@ -1,0 +1,41 @@
+-var x = 4;
+//-var s = 21;
+-var s = 10;
+
+section.col-lg-12
+  //  - for( var i = 0; i <=x; i++){
+    //    img.slider(src="img/nout" + i + ".jpg")
+  img.slider(src="img/nout1.jpg")
+  //  - }
+  div.col-lg-8.centered Выбор по бренду
+    div.col-lg-12
+      span все бренды
+      - for(var i = 1; i < s; i++){
+          a(href="#")
+            img.body-body-brand(class="col-lg-2")(src="img/brand" + i + ".jpg")
+      - }
+
+
+  div.col-lg-8.centered Акционные предложения
+      span все акции
+      div.row
+        - for(var i = 1; i <= 4; i++){
+          div.sh(class="col-lg-3")
+            a(href="#")
+              img(src="img/shares" + i + ".jpeg")
+              span.d Some description
+              button.btn(class="btn-sm") Узнать больше
+        - }
+
+
+  span.all-a  Все обзоры
+  div.body-header-footer.col-lg-8 Обзоры
+    div.body-header-footer-div-elem
+      p Asus Eee Top ET2700: сенсорный мультимедийный цвет
+      span  Сенсорные экраны захватили ринок мобильной техники почти полностю, однако на рынке десктопных ПК пока не прижились
+    div.body-header-footer-div-elem
+      p Asus Eee Top ET2700: сенсорный мультимедийный цвет
+      span Сенсорные экраны захватили ринок мобильной техники почти полностю, однако на рынке десктопных ПК пока не прижились
+    div.body-header-footer-div-elem
+      p Asus Eee Top ET2700: сенсорный мультимедийный цвет
+      span Сенсорные экраны захватили ринок мобильной техники почти полностю, однако на рынке десктопных ПК пока не прижились
